@@ -7,23 +7,19 @@ import android.view.View;
 import android.widget.Button;
 
 public class Activityp extends AppCompatActivity {
-    private Button pprobtn;
+    private Button btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activityp);
-        pprobtn=(Button) findViewById(R.id.button5);
-        pprobtn.setOnClickListener(new View.OnClickListener() {
+        btn=(Button) findViewById(R.id.topicbtn);
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openuprofile();
+                startActivity(new Intent(Activityp.this,topic.class));
             }
         });
     }
-    public void openuprofile()
-    {
-        Intent intent=new Intent(this,uprofile.class);
-        startActivity(intent);
-    }
+
 }

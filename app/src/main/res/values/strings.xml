@@ -31,4 +31,13 @@
     <string name="lbl_forgot_password">Forgot password?</string>
     <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
 
+    <string name="wifi_on">Wifi On</string>
+    <string name="discover">discover</string>
+    <string name="message">Message</string>
+    <string name="connection_status">Connection Status</string>
+    <string name="profile">profile</string>
+    <string name="rating">Rating</string>
+    <string name="todo">TODO</string>
+    <string name="ask_question">Ask question</string>
+    <string name="topic">topic</string>
 </resources>
