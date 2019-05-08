@@ -9,7 +9,7 @@ import android.widget.Button;
 
 
 public class Activityu extends AppCompatActivity {
-    private Button uprobtn, ratingbtn, abtn;
+    private Button uprobtn, ratingbtn, abtn,reqbtn;
 
 
     @Override
@@ -17,12 +17,20 @@ public class Activityu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activityu);
         abtn=(Button) findViewById(R.id.askbtn);
-        abtn.setOnClickListener(new View.OnClickListener() {
+        /*abtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openwifidirect();
             }
+        });*/
+        reqbtn=(Button) findViewById(R.id.reqbtn);
+        reqbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openclientrequest();
+            }
         });
+
 
 
         uprobtn = (Button) findViewById(R.id.proid);
@@ -40,10 +48,15 @@ public class Activityu extends AppCompatActivity {
             }
         });
     }
-    public void openwifidirect(){
-        Intent intent=new Intent(this,wifidirect1.class);
+
+    private void openclientrequest() {
+        Intent intent=new Intent(this,clientrequest.class);
         startActivity(intent);
     }
+    /*public void openwifidirect(){
+        Intent intent=new Intent(this,wifidirect1.class);
+        startActivity(intent);
+    }*/
 
     public void openuprofile() {
         Intent intent = new Intent(this, pprofile.class);

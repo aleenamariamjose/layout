@@ -14,6 +14,7 @@
         android:required="true" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
         android:allowBackup="true"
@@ -22,17 +23,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".topic"></activity>
+        <activity android:name=".clientrequest"></activity>
+        <activity android:name=".topic" />
         <activity android:name=".wifidirect1" />
         <activity android:name=".Rating" />
         <activity android:name=".pprofile" />
         <activity android:name=".Activityu" />
         <activity android:name=".Activityp" />
-        <activity android:name=".AccountActivity.ResetPasswordActivity" />
-        <activity android:name=".AccountActivity.PasswordResetActivity" />
-        <activity android:name=".AccountActivity.SignupActivity" />
+        <activity android:name=".PasswordResetActivity" />
+        <activity android:name=".SignupActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".AccountActivity.LoginActivity">
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
